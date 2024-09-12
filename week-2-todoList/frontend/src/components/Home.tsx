@@ -132,7 +132,7 @@ const Home = () => {
                 </div>
                 <div className="card w-[60vw] min-h-20 ">
                     {todo.length == 0 ? (
-                        <div className="font-bold text-white text-6xl text-center">You don't have any todo Yet</div>
+                        <div className="font-bold text-white text-6xl text-center min-h-[50vh] flex justify-center items-center">You don't have any todo Yet!🙂</div>
                     ) : (todo.map((i, index) => {
                         return <div key={index} className="w-full my-2 max-h-56 duration-500 group overflow-hidden relative rounded bg-neutral-800 text-neutral-50 p-4 flex flex-col justify-evenly">
                             <div className="absolute blur duration-500 group-hover:blur-none w-72 h-72 rounded-full group-hover:translate-x-12 group-hover:translate-y-12 bg-sky-900 right-1 -bottom-24" ></div>
@@ -169,6 +169,7 @@ const Home = () => {
                 </div>
             </div>
             <Footer/>
+            {/* Going to start learning Web3 tech like solidity, Rust, Solana blockchain, ETH, etc after my birthday and trying to get job before my next birthday */}
         </>
     )
 }

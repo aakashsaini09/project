@@ -107,7 +107,7 @@ const Home = () => {
         <>
 
             <div className="min-h-[100vh] min-w-[100vw] bg-neutral-900 flex justify-center items-center flex-col">
-                <h1>Save your importent Todos</h1>
+                <h1 className="font-serif text-4xl font-extrabold text-white pt-14">Save your importent Todos</h1>
                 <div className="form min-h-[80vh] w-full py-24">
                     <div className="max-w-[60vw] min-h-[380px] w-full mx-auto bg-[#0d1b2a] rounded-lg shadow-md p-4">
                         <form className="text-white">

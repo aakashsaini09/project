@@ -17,7 +17,7 @@ const Todo = mongoose.model('todo', todoSchema);
 app.post('/addtodo', addFunction)
 app.get('/gettodo', getFunction)
 app.post('/delete', deleteFunction)
-app.post('/edit', editFunction)
+app.put('/edit', editFunction)
 
 
 
@@ -25,17 +25,26 @@ async function editFunction(req, res) {
     try {
         const { id, title, des } = req.body;
         await mongoose.connect(url);
-        const result = await Todo.findByIdAndUpdate(id); 
         
-    }catch(error){
-        console.log(error)
+        const result = await Todo.findByIdAndUpdate(id, { title: title, des: des }, { new: true });
+
+        // If no result, send a 404 response
+        if (!result) {
+            return res.status(404).send("Todo not found");
+        }
+
+        res.send("Todo Updated Successfully!");
+    } catch (error) {
+        console.log(error);
+        res.status(500).send("Something went wrong!!");
     }
 }
+
 async function deleteFunction(req, res) {
     try {
         const { id } = req.body;
         await mongoose.connect(url);
-        const result = await Todo.findByIdAndDelete(id, {title: title, des: des});
+        const result = await Todo.findByIdAndDelete(id);
         
         if (result) {
             res.send("Todo Updated Successfully!!");

@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import toast from "react-hot-toast"
+import Footer from "./Footer"
 const Home = () => {
     const [title, settitle] = useState("")
     const [des, setdes] = useState("")
@@ -148,7 +149,7 @@ const Home = () => {
                         </div>
                     }))}
                     {openToggel && <div id="static-modal" data-modal-backdrop="static" tabIndex={-1} aria-hidden="true" className=" overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                        <div className="w-[100vw] h-[95vh] backdrop-blur-md my-auto mx-auto flex justify-center items-center">
+                        <div className="w-[100vw] h-[95vh] backdrop-blur-sm my-auto mx-auto flex justify-center items-center">
                             <div className="absolute top-40 right-72 text-white"><i className="fa-solid fa-xmark cursor-pointer text-3xl" onClick={closePopup}></i></div>
                         <form className="min-w-[35vw] py-12 mx-auto ">
                         <div className="mb-5">
@@ -167,6 +168,7 @@ const Home = () => {
                     </div>}
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

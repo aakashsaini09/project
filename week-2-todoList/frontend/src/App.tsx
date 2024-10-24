@@ -5,7 +5,7 @@ import Home from './components/Home'
 function App() {
   return (
     <>
-    <Toaster position='top-right'></Toaster>
+    <Toaster position='top-right bottom-0'></Toaster>
     <Home/>
     </>
   )

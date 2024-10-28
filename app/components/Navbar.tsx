@@ -18,6 +18,7 @@ const Navbar = async() => {
                         "use server";
                         await signOut({ redirectTo: '/' })
                     }}><button type='submit'>Logout</button> </form>
+                    {/* @ts-ignore */}
                     <Link href={`/user/${session?.id}`}> <span>{session?.user?.name}</span>  </Link>
                 </> ):  (
                    <form action={async() => { 

@@ -14,7 +14,9 @@
     "react-dom": "$react-dom"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
     "@tailwindcss/typography": "github:tailwindcss/typography",
+    "class-variance-authority": "^0.7.0",
     "lucide-react": "^0.454.0",
     "next": "15.0.1",
     "next-auth": "^5.0.0-beta.25",

@@ -6,9 +6,9 @@ export default async function Home({searchParams}: { searchParams: Promise<{ que
   const query = (await searchParams).query;
   const posts = [
     {
-      _createdAt: 'Yesterday',
+      _createdAt: new Date(),
       views: 55,
-      auther: {_id: 2},
+      auther: {_id: 2, name: "Aakash Saini"},
       _id: 2,
       description: "this is description",
       image: 'https://png.pngtree.com/thumb_back/fh260/background/20230408/pngtree-robot-white-with-green-cute-robot-fantasy-scene-image_2199816.jpg',

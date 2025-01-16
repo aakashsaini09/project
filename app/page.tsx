@@ -1,5 +1,6 @@
+import { Yaldevi } from "next/font/google";
 import Image from "next/image";
-
+import { FaYoutube } from "react-icons/fa";
 export default function Home() {
   return (
     <main>
@@ -23,19 +24,23 @@ export default function Home() {
       <h1 className="mb-4 text-4xl font-semibold md:text-6xl">The Website You Want Without The <span className="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-4 text-white">Dev Time</span>.</h1>
       <p className="mx-auto mb-5 max-w-[528px] text-xl text-[#636262] lg:mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus</p>
       <div className="flex justify-center">
-        <a href="#" className="mr-5 inline-block rounded-xl bg-black px-8 py-4 text-center font-semibold text-white [box-shadow:rgb(19,_83,_254)_6px_6px] md:mr-6">Get Started</a>
-        <a href="#" className="flex max-w-full flex-row items-center justify-center rounded-xl border border-solid border-[#1353fe] px-6 py-3 font-semibold text-[#1353fe] [box-shadow:rgb(19,_83,_254)_6px_6px]">
-          <img src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63905a575ec39b6784fc687c_Play.svg" alt="" className="mr-2 inline-block w-6" />
-          <p className="text-black dark:text-white">View Showreel</p>
+        <a href="#" className="mr-4 inline-block rounded-xl bg-black px-5 md:px-8 py-3 md:py-4 text-center font-semibold text-white [box-shadow:rgb(19,_83,_254)_6px_6px] md:mr-6">Get Started</a>
+        <a href="https://youtube.com/goldysharma" className="flex max-w-full flex-row items-center justify-center rounded-xl border border-solid border-[#1353fe] px-3 md:px-6 py-1 md:py-3 font-normal md:font-semibold text-[#1353fe] [box-shadow:rgb(19,_83,_254)_6px_6px]">
+          {/* <img src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63905a575ec39b6784fc687c_Play.svg" alt="" className="mr-2 inline-block w-6" /> */}
+          <div className="flex gap-1 justify-center items-center"> 
+            <FaYoutube className="text-xl text-blue-800"/>
+            <p className="text-black dark:text-white">Subscribe Now</p>
+          </div>
         </a>
       </div>
     </div>
-    <div className="relative mx-auto h-[512px]">
-      <img src="https://images.unsplash.com/photo-1498049860654-af1a5c566876?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" className="inline-block h-full w-full rounded-xl object-cover sm:rounded-2xl" />
-      <div className="absolute bottom-0 left-4 right-0 top-4 -z-10 h-full w-full rounded-2xl bg-black dark:bg-white/75"></div>
-    </div>
+  <div className="relative mx-auto h-[256px] sm:h-[384px] md:h-[512px]">
+    <img src="https://images.unsplash.com/photo-1498049860654-af1a5c566876?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" className="inline-block h-full filter brightness-75 w-full rounded-lg object-cover sm:rounded-xl"  />
+    <div className="absolute bottom-2 left-2 md:left-4 right-2 md:right-4 top-2 md:top-4 -z-10 h-full w-full rounded-lg bg-black opacity-50 sm:rounded-xl dark:bg-blue-600"></div>
   </div>
-  <img src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63905b9f809b5c8180ce30c5_pattern-1.svg" alt="" className="absolute bottom-0 left-0 right-auto top-auto -z-10 inline-block md:bottom-1/2 md:left-0 md:right-auto md:top-auto" />
+
+  </div>
+  <img src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63905b9f809b5c8180ce30c5_pattern-1.svg" alt="" className="absolute top-16 left-0 right-auto bottom-auto -z-10 w-24 sm:w-32 md:bottom-1/2 md:left-0 md:right-auto md:top-auto" />
   <img src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63905ba1538296b3f50a905e_pattern-2.svg" alt="" className="absolute bottom-auto left-auto right-0 top-0 -z-10 hidden sm:inline-block" />
 </section>
 <section>
@@ -224,7 +229,6 @@ export default function Home() {
         </ul>
       </div>
 
-      
     </div>
   </div>
 </div>

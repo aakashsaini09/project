@@ -14,7 +14,7 @@ import {
 const Navbar = () => {
 
     return (
-        <nav className="bg-background/50 sticky backdrop-blur-lg top-0 py-2 md:py-3 px-2 md:px-10 z-50 border-b">
+        <nav className="bg-background/50 sticky backdrop-blur-sm top-0 py-2 md:py-3 px-2 md:px-10 z-50">
             <div className="container mx-auto px-4 py-2 justify-between items-center md:flex hidden">
                 <Link href="/">
                     <span className="text-xl font-bold">AakashBlog</span>

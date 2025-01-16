@@ -121,7 +121,7 @@ export default function Home() {
         </ul>
       </div>
 
-      <div className="bg-white/5 ring-2 ring-indigo-700 rounded-3xl p-8 xl:p-10">
+      <div className="bg-white/5 ring-2 ring-indigo-700 rounded-3xl p-8 xl:p-10 shadow-indigo-700 shadow-2xl">
         <div className="flex items-baseline justify-between gap-x-4">
           <h2 id="product2" className="text-lg font-semibold leading-8 text-black dark:text-white">Product Type 2</h2>
           <p className="rounded-full bg-indigo-700 px-2.5 py-1 text-xs font-semibold leading-5 text-white">Most popular</p>

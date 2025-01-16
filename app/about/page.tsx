@@ -1,5 +1,9 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
+import { GiStrong } from "react-icons/gi";
+import { MdOutlineGppGood } from "react-icons/md";
+import { SiLinuxserver } from "react-icons/si";
+import { IoMdTrendingDown } from "react-icons/io";
 
 const page = () => {
   return (
@@ -45,7 +49,7 @@ const page = () => {
           <div className="relative">
             <dt>
               <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-                <img src="https://www.svgrepo.com/show/503163/api-settings.svg" alt="API settings icon" />
+                <MdOutlineGppGood className='text-5xl text-black dark:text-white '/>
               </div>
               <p className="font-heading ml-16 text-lg leading-6 font-bold text-gray-700 dark:text-gray-200">Powerful API</p>
             </dt>
@@ -57,8 +61,8 @@ const page = () => {
           <div className="relative">
             <dt>
               <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-                <img src="https://www.svgrepo.com/show/503138/webpack.svg" alt="SDK icon" />
-              </div>
+                <SiLinuxserver className='text-5xl text-black dark:text-white '/>
+                </div>
               <p className="font-heading ml-16 text-lg leading-6 font-bold text-gray-700 dark:text-gray-200">Easy to integrate SDK</p>
             </dt>
             <dd className="mt-2 ml-16 text-sm md:text-base text-gray-500 dark:text-gray-400">
@@ -69,8 +73,9 @@ const page = () => {
           <div className="relative">
             <dt>
               <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-                <img src="https://www.svgrepo.com/show/511771/dashboard-671.svg" alt="Dashboard icon" />
-              </div>
+                <IoMdTrendingDown className='text-5xl text-black dark:text-white '/>
+                </div>
+
               <p className="font-heading ml-16 text-lg leading-6 font-bold text-gray-700 dark:text-gray-200">Low Transaction Cost</p>
             </dt>
             <dd className="mt-2 ml-16 text-sm md:text-base text-gray-500 dark:text-gray-400">
@@ -81,8 +86,8 @@ const page = () => {
           <div className="relative">
             <dt>
               <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-                <img src="https://www.svgrepo.com/show/76267/free-commercial-label.svg" alt="Label icon" />
-              </div>
+                <GiStrong className='text-5xl text-black dark:text-white '/>
+                </div>
               <p className="font-heading ml-16 text-lg leading-6 font-bold text-gray-700 dark:text-gray-200">Powerful Dashboard</p>
             </dt>
             <dd className="mt-2 ml-16 text-sm md:text-base text-gray-500 dark:text-gray-400">

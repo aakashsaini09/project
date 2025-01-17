@@ -21,7 +21,7 @@ export default function Home() {
       <section className="relatve">
   <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
     <div className="mx-auto mb-12 w-full max-w-3xl text-center md:mb-16 lg:mb-20">
-      <h1 className="mb-4 text-4xl font-semibold md:text-6xl">The Website You Want Without The <span className="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-4 text-white">Dev Time</span>.</h1>
+      <h1 className="mb-4 text-4xl font-semibold md:text-5xl">The Website You Want Without The <span className="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-4 text-white">Dev Time</span>.</h1>
       <p className="mx-auto mb-5 max-w-[528px] text-xl text-[#636262] lg:mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus</p>
       <div className="flex justify-center">
         <a href="#" className="mr-4 inline-block rounded-xl bg-black px-5 md:px-8 py-3 md:py-4 text-center font-semibold text-white [box-shadow:rgb(19,_83,_254)_6px_6px] md:mr-6">Get Started</a>

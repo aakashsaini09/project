@@ -8,6 +8,9 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+	  fontFamily: {
+		primay: 'var(--font-jetbrainMono)'
+	  },
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',
@@ -33,7 +36,7 @@ export default {
   				foreground: 'hsl(var(--muted-foreground))'
   			},
   			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
+  				DEFAULT: '#34f5f3',
   				foreground: 'hsl(var(--accent-foreground))'
   			},
   			destructive: {

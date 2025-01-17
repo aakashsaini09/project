@@ -37,7 +37,7 @@ const Navbar = () => {
             </div>
 
             <div className='md:hidden flex container mx-auto px-4 py-2 justify-between items-center'>
-                <div className='font-bold '>AakashBlog</div>
+                <div className='font-bold text-accent'>AakashBlog</div>
 
                 <Sheet>
                     <div className='my-auto flex justify-center items-center gap-2'>

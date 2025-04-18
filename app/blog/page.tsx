@@ -11,6 +11,12 @@ const page = () => {
         <div className='box h-[30vh] w-full border border-orange-400 flex justify-center items-center blurClass'>This is Box 6</div>
         <div className='box h-[30vh] w-full border border-orange-400 flex justify-center items-center blurClass'>This is Box 7</div>
       </div>
+
+      <div className='videobg'>
+        <video autoPlay muted loop>
+          <source src='/video.mp4' />
+        </video>
+      </div>
     </>
   )
 }

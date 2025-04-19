@@ -12,6 +12,28 @@ body{
 body{
     overflow-x: hidden;
 }
+nav{
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    width: full;
+    background-color: rgb(37, 35, 35);
+    color: white;
+    padding: 20px 80px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav h1{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
 #p1{
     height: 100%;
     width: 100%;

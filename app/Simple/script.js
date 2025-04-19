@@ -63,7 +63,7 @@ gsap.to("#p2 h1", {
     scrollTrigger:{
         trigger: "#p2",
         scroller:"body",
-        markers: true,
+        // markers: true,
         start:"top 0%",
         end: "top -150%",
         // toggleActions: "restart none none none",

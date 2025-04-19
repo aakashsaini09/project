@@ -40,9 +40,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 #box{
     height: 300px;   
     width: 300px;
     background-color: royalblue;
+}
+#p3 h1{
+    background-color: blue;
+    padding: 10px;
+    font-size: 60px;
+    position: relative;
+}
+#p3 h2{
+    background-color: rgb(97, 97, 97);
+    padding: 10px;
+    font-size: 60px;
+    position: relative;
 }

@@ -93,13 +93,30 @@ string.addEventListener("mouseleave", function(){
 })
 var main = document.querySelector("#main")
 var cursor = document.querySelector("#cursor")
+var img = document.querySelector("#img")
 
 main.addEventListener("mousemove", function(event){
+
     gsap.to(cursor, {
         x: event.x,
         y: event.y,
-        duration: 1,
-        ease:"bounce.out"
+        duration: 0.5,
+        // ease:"bounce.out"
+    })
+})
+
+img.addEventListener("mouseenter", function(event){
+    cursor.innerHTML = "View More"
+    gsap.to(cursor,{
+        scale: 4,
+        backgroundColor: "#ffffff3a"
+    })
+})
+img.addEventListener("mouseleave", function(event){
+    cursor.innerHTML = ""
+    gsap.to(cursor,{
+        scale: 1,
+        backgroundColor: "white"
     })
 })
 

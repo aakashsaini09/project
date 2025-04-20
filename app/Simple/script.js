@@ -91,6 +91,15 @@ string.addEventListener("mouseleave", function(){
         ease: "elastic.out(1, 0.2)"
     })
 })
-// string.addEventListener("mouseenter", function(){
+var main = document.querySelector("#main")
+var cursor = document.querySelector("#cursor")
 
-// })
+main.addEventListener("mousemove", function(event){
+    gsap.to(cursor, {
+        x: event.x,
+        y: event.y,
+        duration: 1,
+        ease:"bounce.out"
+    })
+})
+

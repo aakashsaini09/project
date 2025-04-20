@@ -20,3 +20,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+#main{
+    width: 100vw;
+    height: 100vh;
+}
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+}

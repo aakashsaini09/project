@@ -28,6 +28,7 @@ a{
 nav h1{
     font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
+    padding: 40px 50px;
 }
 nav ul{
     display: flex;

@@ -55,6 +55,10 @@ nav ul{
     height: 100%;
     width: 100%;
     background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 #bmain{
@@ -69,7 +73,7 @@ nav ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 50px;
+    padding: 10px 10px;
     color: #fff;
 
 }
@@ -83,17 +87,20 @@ nav ul{
 }
 #full{
     height: 100%;
-    width: 40%;
+    width: 20%;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.364);
     top: 0;
-    right: -40%;
+    right: -20%;
     /* filter: blur(30px); */
     backdrop-filter: blur(6px);
-    padding: 150px 60px;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #full h4{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -107,4 +114,13 @@ nav ul{
     font-weight: 800;
     font-size: 25px;
     cursor: pointer;
+}
+
+
+/* page 3 in Index.html file */
+#p3 h2{
+    font-size: 100px;
+}
+#p3 h2 span{
+    display: inline-block;
 }

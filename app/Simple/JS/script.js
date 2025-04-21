@@ -81,18 +81,37 @@ function breakTheText() {
     var h1Text = h1.textContent
     var clutter = ""
     var splittedTxt = h1Text.split("")
-    splittedTxt.forEach(function(val){
-        clutter += `<span>${val}</span>`
-        console.log(val)
+    var halfVal = splittedTxt.length/2
+    splittedTxt.forEach(function(val, index){
+        if(index < halfVal){
+            clutter += `<span class="a">${val}</span>`
+        }else{
+            clutter += `<span class="b">${val}</span>`
+        }
     })
     h1.innerHTML = clutter
 }
 breakTheText()
 
-gsap.from("#p3 h2 span", {
-    y: 50, 
+// gsap.from("#p3 h2 span", {
+//     y: 60, 
+//     opacity: 0,
+//     duration: 0.8,
+//     delay: 0.5, 
+//     stagger: -0.15
+// })
+
+gsap.from("#p3 h2 .a", {
+    y: 80,
+    duration:0.6,
+    delay: 0.5,
     opacity: 0,
-    duration: 1,
-    delay: 0.5, 
-    stagger: 0.2
+    stagger: 0.15
+})
+gsap.from("#p3 h2 .b", {
+    y: -80,
+    opacity: 0,
+    duration:0.6,
+    delay: 0.5,
+    stagger: 0.15
 })

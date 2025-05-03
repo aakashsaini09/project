@@ -187,3 +187,10 @@ nav button{
 .black{
     background-color: black;
 }
+.black .elem-p1 h2{
+    background-color: white;
+}
+.black .elem-p1 h4 i{
+    background-color: white;
+    color: black;
+}

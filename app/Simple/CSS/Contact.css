@@ -141,5 +141,49 @@ nav button{
     width: 45%;
     border: 3px solid black;
     border-radius: 20px;
+    padding: 45px;
     box-shadow: 0px 16px 0px black;
+    display: flex;
+}
+.elem-p1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.elem-p2{
+    height: 100%;
+    width: 50%;
+}
+.elem-p2 img{
+    height: 100%;
+}
+.elem-p1 h2{
+    font-size: 27px;
+    background-color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    font-weight: 500;
+    padding: 0 4px;
+    border-radius: 8px;
+}
+.elem-p1 h4{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 500;
+    gap: 17px;
+}
+.elem-p1 h4 i{
+    padding: 17px;
+    background-color: black;
+    font-weight: 900;
+    color: white;
+    border-radius: 50%;
+}
+
+.black{
+    background-color: black;
 }

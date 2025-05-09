@@ -1,21 +1,41 @@
+"use client"
 import { Button } from '@/components/ui/button'
-import React from 'react'
+import React, { useRef } from 'react'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 import { GiStrong } from "react-icons/gi";
 import { MdOutlineGppGood } from "react-icons/md";
 import { SiLinuxserver } from "react-icons/si";
 import { IoMdTrendingDown } from "react-icons/io";
 
 const page = () => {
+  useGSAP(() => {
+    gsap.from(".box", {
+      x: -300,
+      opacity: 0,
+      duration: 2,
+      delay: 1
+    })
+})
+const headingRef = useRef(null)
+useGSAP(()=>{
+  gsap.from(headingRef.current,{
+    x: 300,
+    opacity: 0,
+    duration: 2,
+    delay: 1
+  })
+})
   return (
     <>
     <section className="bg-white dark:bg-gray-900">
     <div className="sm:flex items-center dark:bg-gray-900">
     <div className="sm:w-1/2 p-10 md:pl-28">
         <div className="image object-center text-center">
-            <img src="https://i.imgur.com/WbQnbas.png"/>
+            <img className='box' src="https://i.imgur.com/WbQnbas.png"/>
         </div>
     </div>
-    <div className="sm:w-1/2 p-5">
+    <div className="sm:w-1/2 p-5" ref={headingRef}>
         <div className="text">
             <span className="text-gray-500 border-b-2 border-indigo-600 uppercase dark:text-gray-500">About us</span>
             <h2 className="my-4 font-bold text-3xl  sm:text-4xl ">About <span className="text-indigo-600">Our Company</span>

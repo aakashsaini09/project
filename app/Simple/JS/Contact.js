@@ -27,3 +27,8 @@ tl.from(".center-part1 button", {
     opacity: 0,
     duration: 0.4
 })
+tl.from(".center-part2 img", {
+    x: 200,
+    duration: 0.5,
+    opacity: 0
+}, "-=1")
